@@ -53,7 +53,8 @@ func main() {
 	// Ruta GraphQL
 	r.Handle("/graphql", graphQLHandler)
 
-	// Ruta Swagger - Apuntar correctamente a swagger.json
+	// Ruta Swagger - Apuntar correctamente a swagger.jsona
+	//adasd
 	//r.PathPrefix("/swagger/").Handler(httpSwagger.WrapHandler(httpSwagger.URL("http://localhost:8080/swagger/swagger.json")))
 
 	// Iniciar el servidor
