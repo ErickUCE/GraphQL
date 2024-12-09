@@ -7,7 +7,6 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/graphql-go/graphql"
 	"github.com/graphql-go/handler"
-	httpSwagger "github.com/swaggo/http-swagger"
 )
 
 // @title GraphQL Go API
@@ -55,7 +54,7 @@ func main() {
 	r.Handle("/graphql", graphQLHandler)
 
 	// Ruta Swagger - Apuntar correctamente a swagger.json
-	r.PathPrefix("/swagger/").Handler(httpSwagger.WrapHandler(httpSwagger.URL("http://localhost:8080/swagger/swagger.json")))
+	//r.PathPrefix("/swagger/").Handler(httpSwagger.WrapHandler(httpSwagger.URL("http://localhost:8080/swagger/swagger.json")))
 
 	// Iniciar el servidor
 	log.Println("Servidor corriendo en http://localhost:8080")
